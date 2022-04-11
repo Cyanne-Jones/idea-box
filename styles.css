@@ -1,0 +1,38 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: light;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.body-container {
+  border: 2px solid purple;
+  display: flex;
+}
+
+.form-and-display {
+  border: 2px solid red;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container {
+  border: 2px solid orange;
+  width: 20%;
+}
+
+.idea-display {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.idea-box {
+  border: 2px solid black;
+  width: 20%;
+}
