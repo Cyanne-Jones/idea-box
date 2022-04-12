@@ -15,11 +15,9 @@ header {
 img {
   width: 20px;
   height: 20px;
+  padding: 5px;
 }
 
-h3 {
-  margin: 0;
-}
 
 h4 {
   color: #BFBFDD;
@@ -44,20 +42,45 @@ h4 {
 .idea-form {
   border: 4px solid pink;
   height: 50%;
+  background-color: #A9AAD2;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 
+h3 {
+  margin: 0;
+  text-align: left;
+}
+
+.content-container {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.search-field {
+  background-color: #5356A4;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 .input {
-  border: 4px solid green;
-  width: 40%;
+  border: 2px solid #5356A4;
+  width: 100%;
+  border-radius: 3px;
 }
 
 .saved-button {
   font-family: 'Open Sans', sans-serif;
-  width: 40%;
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
   color: white;
   background-color: #1F1F3D;
   border: 1px solid #5356A4;
@@ -81,6 +104,7 @@ h4 {
   font-size: 20px;
   font-weight: bold;
   border: none;
+  border-radius: 3px;
 }
 
 .nav-container {
