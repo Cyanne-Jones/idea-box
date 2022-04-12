@@ -8,8 +8,18 @@ img {
   height: 20px;
 }
 
+h3 {
+  margin: 0;
+}
+
+h4 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .body-container {
   border: 2px solid purple;
+  height: 100vh;
   display: flex;
 }
 
@@ -20,13 +30,57 @@ img {
   flex-direction: column;
 }
 
+.idea-form {
+  border: 2px solid pink;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input {
+  border: 1px solid green;
+  width: 40%;
+}
+
+.saved-button {
+  font-family: 'Open Sans', sans-serif;
+  width: 40%;
+  color: white;
+  background-color: #1F1F3D;
+  border: 1px solid #5356A4;
+}
+
+.filter-starred-ideas {
+  margin: 5px;
+  border-bottom: 1px solid #353567;
+}
+
+.starred-button {
+  font-family: 'Open Sans', sans-serif;
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .nav-container {
-  border: 2px solid orange;
   width: 20%;
+  background-color: #1F1E3D;
+
+}
+
+header {
+  color: #E9E9F3;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid #353567;
+  padding: 10px;
 }
 
 .idea-display {
   border: 2px solid green;
+  height: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -34,5 +88,8 @@ img {
 
 .idea-box {
   border: 2px solid black;
+  font-size: 10px;
   width: 20%;
+  height: 50%;
+
 }
