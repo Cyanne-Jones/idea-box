@@ -2,7 +2,7 @@
   <html lang='en' dir='ltr'>
     <head>
       <link rel="stylesheet" href="./styles.css">
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
     </head>
     <body>
       <section class='body-container'>
@@ -13,21 +13,25 @@
             <button class='starred-button'>Show Starred Ideas</button>
           </div>
         </nav>
-        <div class='form-and-display'>
+        <main>
           <section class='idea-form'>
-            <div class='content-container'>
-              <h3>Title</h3>
-              <input type='text' class='input' id='title-input'>
-              </input>
-              <h3>Body</h3>
-              <input type='text' class='input' id='body-input'>
-              </input>
+            <form>
+              <div class="title-field">
+                <h3>Title</h3>
+                <input type='text' class='input' id='title-input'>
+                </input>
+              </div>
+              <div class="body-field">
+                <h3>Body</h3>
+                <input type='text' class='input' id='body-input'>
+                </input>
+              </div>
               <button class='saved-button'>Save</button>
               <div class='search-field'>
                 <img src='./assets/search.svg' alt='magnifying glass'>
-                <input type='text' class='input' id='search-input' value='Search Ideas'></input>
+                <input type='text' class='input' id='search-input' value='Search ideas'></input>
               </div>
-            </div>
+            </form>
           </section>
           <section class='idea-display'>
             <article class='idea-box'>
@@ -101,7 +105,7 @@
               </section>
             </article>
           </section>
-        </div>
+        </main>
       </section>
       <script type="text/javascript" src="Idea.js"></script>
       <script type="text/javascript" src="main.js"></script>
