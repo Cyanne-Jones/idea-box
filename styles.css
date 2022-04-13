@@ -28,13 +28,11 @@ h4 {
 }
 
 .body-container {
-  border: 4px solid purple;
   height: 100vh;
   display: flex;
 }
 
 main {
-  border: 4px solid red;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -135,28 +133,27 @@ form {
 .nav-container {
   width: 20%;
   background-color: #1F1E3D;
-
+  height: 100%;
 }
 
 
 .idea-display {
-  border: 2px solid green;
-  height: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #EAEAF4;
+  justify-content: flex-start;
 }
 
 .idea-box {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  border: 2px solid black;
+  border: 2px solid #1F1F3D;
   font-size: 10px;
-  width: 150px;
+  width: 225px;
   height: 250px;
-
+  margin: 20px;
 }
 
 .top-bar {
@@ -165,6 +162,17 @@ form {
   display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.idea-title {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.idea-body {
+  font-size: 15px;
+  margin: 5px;
+  padding: 10px;
 }
 
 .box-body {
