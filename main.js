@@ -1,12 +1,30 @@
 // QUERY SELECTORS
 var userTitle = document.querySelector('#title-input');
 var userBody = document.querySelector('#body-input');
-var ideaDisplay = document.querySelector('.idea-display')
+var ideaDisplay = document.querySelector('.idea-display');
+var inputBoxes = document.querySelector('.idea-form');
 
 var savedButton = document.querySelector('.saved-button');
 
 // EVENT LISTENERS
 savedButton.addEventListener('click', showIdea);
+inputBoxes.addEventListener('change', enableButton);
+
+function disableButton() {
+  savedButton.disable = true;
+  savedButton.classList.remove('save-en');
+  savedButton.classList.add('save-dis');
+}
+
+function enableButton() {
+  if (userTitle.value && userBody.value) {
+    savedButton.disable = false;
+    savedButton.classList.remove('save-dis');
+    savedButton.classList.add('save-en');
+  } else {
+    disableButton();
+  }
+}
 
 // ARRAY
 var ideas = [];
