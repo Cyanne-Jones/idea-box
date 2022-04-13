@@ -16,7 +16,8 @@ function saveIdea(event) {
   event.preventDefault()
   var newIdea = new Idea (userTitle.value, userBody.value);
   ideas.push(newIdea);
-  console.log(ideas)
+  userTitle.value = '';
+  userBody.value = '';
 }
 
 function showIdea() {
