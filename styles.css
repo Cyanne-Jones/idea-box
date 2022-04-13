@@ -96,6 +96,10 @@ form {
 
 #search-input {
   color: #A9AAD2;
+  margin-top: 0;
+  border: 2px solid #5356A4;
+  width: 100%;
+  border-radius: 3px;
 }
 
 .saved-button {
@@ -107,6 +111,22 @@ form {
   background-color: #1F1F3D;
   border: 1px solid #5356A4;
   font-weight: bold;
+}
+
+.save-dis {
+  background-color: #EAEAF4;
+}
+
+.save-dis:hover {
+  cursor: not-allowed;
+}
+
+.save-en {
+  background-color: #1F1F3D;
+}
+
+.save-en:hover {
+  cursor: pointer;
 }
 
 .filter-starred-ideas {
