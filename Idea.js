@@ -1,6 +1,6 @@
 class Idea {
   constructor(userTitle, userBody) {
-    this.id = date.now;
+    this.id = Date.now;
     this.title = userTitle;
     this.body = userBody;
     this.star = false;
