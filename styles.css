@@ -143,6 +143,7 @@ form {
   flex-wrap: wrap;
   background-color: #EAEAF4;
   justify-content: flex-start;
+  height: 100%;
 }
 
 .idea-box {
@@ -154,7 +155,6 @@ form {
   width: 225px;
   height: 250px;
   margin: 20px;
-  height: 100%;
 }
 
 .top-bar {
