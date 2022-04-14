@@ -8,6 +8,7 @@ var savedButton = document.querySelector('#savedButton');
 // EVENT LISTENERS
 savedButton.addEventListener('click', showIdea);
 inputBoxes.addEventListener('input', enableButton);
+ideaDisplay.addEventListener('click', deleteIdea);
 
 function disableButton() {
   savedButton.disabled = true;
@@ -59,4 +60,15 @@ function showIdea() {
       </section>
     </article>`
   }
+}
+
+function deleteIdea(event) {
+  if (event.target.classList.contains('delete-button')) {
+    for (var i = 0; i < ideas.length; i++) {
+      if (parseInt(event.target.id) === ideas[i].id) {
+        ideas.splice(i, 1);
+      }
+    }
+    event.target.closest("article").remove();
+  };
 }
