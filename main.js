@@ -9,7 +9,7 @@ var savedButton = document.querySelector('#savedButton');
 savedButton.addEventListener('click', showIdea);
 inputBoxes.addEventListener('input', enableButton);
 ideaDisplay.addEventListener('click', deleteIdea);
-ideaDisplay.addEventListener('click', favoriteIdea)
+// ideaDisplay.addEventListener('click', favoriteIdea)
 
 
 function disableButton() {
@@ -49,7 +49,7 @@ function showIdea() {
   for (var i = 0; i < ideas.length; i++) {
     ideaDisplay.innerHTML += `<article class='idea-box'  id='${ideas[i].id}'>
       <section class='top-bar'>
-        <img src='./assets/star-active.svg' alt='orange star' class='star-button'>
+        <img src='./assets/star.svg' alt='white star' class='star-button'>
         <img src='./assets/delete.svg' alt='white x' class='delete-button'>
       </section>
       <section class='box-body'>
@@ -66,6 +66,7 @@ function showIdea() {
 
 function deleteIdea(event) {
   if (event.target.classList.contains('delete-button')) {
+    console.log(ideas)
     for (var i = 0; i < ideas.length; i++) {
       if ((parseInt(event.target.closest('article').id)) === ideas[i].id) {
         ideas.splice(i, 1);
@@ -81,6 +82,13 @@ function favoriteIdea() {
       if ((parseInt(event.target.closest('article').id)) === ideas[i].id) {
         ideas[i].updateIdea()
         console.log(ideas)
+      }
+      if (ideas[i].star) {
+        event.target.src = './assets/star-active.svg';
+        event.target.alt = 'orange star'
+      } else {
+        event.target.src = './assets/star.svg';
+        event.target.alt = 'white star'
       }
     }
   }
