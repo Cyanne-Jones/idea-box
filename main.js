@@ -48,7 +48,7 @@ function showIdea() {
     ideaDisplay.innerHTML += `<article class='idea-box'>
       <section class='top-bar'>
         <img src='./assets/star-active.svg' alt='orange star'>
-        <img src='./assets/delete.svg' alt='white x'>
+        <img src='./assets/delete.svg' alt='white x' id='${ideas[i].id}' class='delete-button'>
       </section>
       <section class='box-body'>
         <h3 class='idea-title'>${ideas[i].title}</h3>

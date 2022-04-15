@@ -129,6 +129,10 @@ form {
   cursor: pointer;
 }
 
+.delete-button:hover {
+  cursor: pointer;
+}
+
 .filter-starred-ideas {
   margin: 5px;
   border-bottom: 3px solid #353567;
