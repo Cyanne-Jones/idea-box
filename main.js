@@ -9,6 +9,8 @@ var savedButton = document.querySelector('#savedButton');
 savedButton.addEventListener('click', showIdea);
 inputBoxes.addEventListener('input', enableButton);
 ideaDisplay.addEventListener('click', deleteIdea);
+ideaDisplay.addEventListener('click', favoriteIdea)
+
 
 function disableButton() {
   savedButton.disabled = true;
@@ -45,10 +47,10 @@ function showIdea() {
   saveIdea(event);
   ideaDisplay.innerHTML = '';
   for (var i = 0; i < ideas.length; i++) {
-    ideaDisplay.innerHTML += `<article class='idea-box'>
+    ideaDisplay.innerHTML += `<article class='idea-box'  id='${ideas[i].id}'>
       <section class='top-bar'>
-        <img src='./assets/star-active.svg' alt='orange star'>
-        <img src='./assets/delete.svg' alt='white x' id='${ideas[i].id}' class='delete-button'>
+        <img src='./assets/star-active.svg' alt='orange star' class='star-button'>
+        <img src='./assets/delete.svg' alt='white x' class='delete-button'>
       </section>
       <section class='box-body'>
         <h3 class='idea-title'>${ideas[i].title}</h3>
@@ -65,10 +67,21 @@ function showIdea() {
 function deleteIdea(event) {
   if (event.target.classList.contains('delete-button')) {
     for (var i = 0; i < ideas.length; i++) {
-      if (parseInt(event.target.id) === ideas[i].id) {
+      if ((parseInt(event.target.closest('article').id)) === ideas[i].id) {
         ideas.splice(i, 1);
       }
     }
     event.target.closest("article").remove();
   };
+}
+
+function favoriteIdea() {
+  if (event.target.classList.contains('star-button')) {
+    for (var i = 0; i < ideas.length; i++) {
+      if ((parseInt(event.target.closest('article').id)) === ideas[i].id) {
+        ideas[i].updateIdea()
+        console.log(ideas)
+      }
+    }
+  }
 }
