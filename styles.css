@@ -125,11 +125,13 @@ form {
   background-color: #1F1F3D;
 }
 
-.save-enabled:hover {
+/* .save-enabled:hover {
   cursor: pointer;
-}
+} */
 
-.delete-button:hover {
+.delete-button:hover,
+.save-enabled:hover,
+.star-button:hover {
   cursor: pointer;
 }
 
