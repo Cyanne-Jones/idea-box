@@ -46,10 +46,16 @@ function saveIdea(event) {
 function showIdea() {
   saveIdea(event);
   ideaDisplay.innerHTML = '';
+  var src = '';
   for (var i = 0; i < ideas.length; i++) {
-    ideaDisplay.innerHTML += `<article class='idea-box'  id='${ideas[i].id}' data-index='${i}'>
+    if (ideas[i].star) {
+      src = './assets/star-active.svg'
+    } else {
+      src = './assets/star.svg'
+    }
+    ideaDisplay.innerHTML += `<article class='idea-box'  id='${ideas[i].id}'>
       <section class='top-bar'>
-        <img src='./assets/star.svg' alt='white star' class='star-button'>
+        <img src=${src} alt='white star' class='star-button'>
         <img src='./assets/delete.svg' alt='white x' class='delete-button'>
       </section>
       <section class='box-body'>
