@@ -11,7 +11,10 @@ inputBoxes.addEventListener('input', enableButton);
 ideaDisplay.addEventListener('click', deleteIdea);
 ideaDisplay.addEventListener('click', favoriteIdea);
 
+// ARRAY
+var ideas = [];
 
+// FUNCTIONS
 function disableButton() {
   savedButton.disabled = true;
   savedButton.classList.remove('save-enabled');
@@ -30,10 +33,6 @@ function enableButton() {
   }
 }
 
-// ARRAY
-var ideas = [];
-
-// FUNCTIONS
 function saveIdea(event) {
   event.preventDefault()
   var newIdea = new Idea (userTitle.value, userBody.value);
