@@ -40,33 +40,25 @@ function saveIdea(event) {
   userTitle.value = '';
   userBody.value = '';
   disableButton();
+  return newIdea
 }
 
 function showIdea() {
-  saveIdea(event);
-  ideaDisplay.innerHTML = '';
-  var src = '';
-  for (var i = 0; i < ideas.length; i++) {
-    if (ideas[i].star) {
-      src = './assets/star-active.svg'
-    } else {
-      src = './assets/star.svg'
-    }
-    ideaDisplay.innerHTML += `<article class='idea-box'  id='${ideas[i].id}'>
-      <section class='top-bar'>
-        <img src=${src} alt='white star' class='star-button'>
-        <img src='./assets/delete.svg' alt='white x' class='delete-button'>
-      </section>
-      <section class='box-body'>
-        <h3 class='idea-title'>${ideas[i].title}</h3>
-        <p class='idea-body'>${ideas[i].body}</p>
-      </section>
-      <section class='bottom-bar'>
-        <img src='./assets/comment.svg' alt='plus sign'>
-        <h4 class='idea-box-comment'>Comment</h4>
-      </section>
-    </article>`
-  }
+  var newIdea = saveIdea(event);
+  ideaDisplay.innerHTML += `<article class='idea-box'  id='${newIdea.id}'>
+    <section class='top-bar'>
+      <img src='./assets/star.svg' alt='white star' class='star-button'>
+      <img src='./assets/delete.svg' alt='white x' class='delete-button'>
+    </section>
+    <section class='box-body'>
+      <h3 class='idea-title'>${newIdea.title}</h3>
+      <p class='idea-body'>${newIdea.body}</p>
+    </section>
+    <section class='bottom-bar'>
+      <img src='./assets/comment.svg' alt='plus sign'>
+      <h4 class='idea-box-comment'>Comment</h4>
+    </section>
+  </article>`
 }
 
 function deleteIdea(event) {
