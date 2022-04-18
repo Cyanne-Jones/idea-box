@@ -1,7 +1,5 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
-  font-weight: light;
 }
 
 header {
@@ -19,16 +17,11 @@ img {
   padding: 5px;
 }
 
-h4 {
-  color: #BFBFDD;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: 10px;
-}
-
-.body-container {
-  display: flex;
-  height: 100vh;
+input {
+  border-radius: 3px;
+  width: 98%;
+  margin-top: 0;
+  border: 2px solid #5356A4;
 }
 
 main {
@@ -37,16 +30,7 @@ main {
   width: 80%;
 }
 
-.idea-form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 475px;
-  background-color: #A9AAD2;
-}
-
-h3 {
+label {
   padding: 0;
   margin: 0;
   text-align: left;
@@ -63,30 +47,24 @@ form {
   height: 100%;
 }
 
-.title-field,
-.body-field,
-.search-field,
-.input,
-.search-input,
-.saved-button {
-  width: 100%;
+.body-container {
+  display: flex;
+  height: 100vh;
 }
 
-.input,
-.search-input,
-.starred-button {
-  border-radius: 3px;
-}
-
-.search-field {
+.idea-form {
   display: flex;
   flex-direction: row;
-  background-color: #5356A4;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 475px;
+  background-color: #A9AAD2;
 }
 
-.input {
-  margin-top: 0;
-  border: 2px solid #5356A4;
+.title-field,
+.body-field,
+.saved-button {
+  width: 100%;
 }
 
 .title-input {
@@ -95,12 +73,6 @@ form {
 
 .body-input {
   height: 100px;
-}
-
-.search-input {
-  color: #A9AAD2;
-  margin-top: 0;
-  border: 2px solid #5356A4;
 }
 
 .saved-button {
@@ -129,23 +101,6 @@ form {
 .save-enabled:hover,
 .star-button:hover {
   cursor: pointer;
-}
-
-.filter-starred-ideas {
-  margin: 5px;
-  border-bottom: 3px solid #353567;
-}
-
-.starred-button {
-  font-family: 'Open Sans', sans-serif;
-  width: 90%;
-  height: 50px;
-  margin: 5px 10px 30px 10px;
-  background-color: #5356A4;
-  color: #E9E9F3;
-  font-size: 20px;
-  font-weight: bold;
-  border: none;
 }
 
 .nav-container {
@@ -199,15 +154,11 @@ form {
   height: 190px;
 }
 
-.idea-body,
-.idea-box-comment {
+.idea-body {
   margin: 0px;
 }
 
 .bottom-bar {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   height: 30px;
   background-color: #5356A4;
 }

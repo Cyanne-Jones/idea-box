@@ -54,10 +54,7 @@ function showIdea() {
       <h3 class='idea-title'>${newIdea.title}</h3>
       <p class='idea-body'>${newIdea.body}</p>
     </section>
-    <section class='bottom-bar'>
-      <img src='./assets/comment.svg' alt='plus sign'>
-      <h4 class='idea-box-comment'>Comment</h4>
-    </section>
+    <section class='bottom-bar'></section>
   </article>`
 }
 
