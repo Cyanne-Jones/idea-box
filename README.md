@@ -14,19 +14,23 @@ What if I don't like my idea anymore? Press the white "x" button on the idea car
 
 To access this app, clone down this repository into your machine, and open up the index.html file in your browser. You're now able to save all of your great ideas in one convenient place!
 
-#### What does it look like? 
+#### What does it look like?
 ![Screen Shot 2022-04-15 at 4 47 20 PM](https://user-images.githubusercontent.com/98280256/163651442-294d51ec-7ccd-4063-b35a-9d902a784e34.png)
 
+#### What We Removed
+-We originally had all of the styling to match the comp including the search bar, filter starred ideas button, comment +, etc.
 
-#### Add your idea! 
-![Screen Shot 2022-04-15 at 4 48 05 PM](https://user-images.githubusercontent.com/98280256/163651454-53e3cc85-e198-4dff-9af1-1e5da4033a99.png)
+-Updated for user experience so our final project didn't have unused buttons or features.
 
-
-#### Favorite your idea!
-![Screen Shot 2022-04-15 at 4 47 50 PM](https://user-images.githubusercontent.com/98280256/163651449-5e2c9b7b-549b-4918-851a-e90bf551b9d1.png)
-
+-And yes, it was painful to remove all of that work. Check out previous branches to see all of that beautiful code. :)
 
 #### Future Ideas
 -Adding a "filter by favorite" function
 
 -Animations on save to show how good your idea is!
+
+-Favorite your idea!
+![Screen Shot 2022-04-15 at 4 47 50 PM](https://user-images.githubusercontent.com/98280256/163651449-5e2c9b7b-549b-4918-851a-e90bf551b9d1.png)
+
+-Add your idea!
+![Screen Shot 2022-04-15 at 4 48 05 PM](https://user-images.githubusercontent.com/98280256/163651454-53e3cc85-e198-4dff-9af1-1e5da4033a99.png)

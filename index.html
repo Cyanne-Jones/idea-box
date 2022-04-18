@@ -1,43 +1,35 @@
 <!DOCTYPE html>
-  <html lang='en' dir='ltr'>
+  <html lang="en" dir="ltr">
     <head>
-      <link rel='stylesheet' href='./styles.css'>
-      <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap' rel='stylesheet'>
+      <link rel="stylesheet" href="./styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
     </head>
     <body>
-      <section class='body-container'>
-        <nav class='nav-container'>
+      <section class="body-container">
+        <nav class="nav-container">
           <header>IdeaBox</header>
-          <div class='filter-starred-ideas'>
-            <h4>Filter Starred Ideas</h4>
-            <button class='starred-button'>Show Starred Ideas</button>
-          </div>
         </nav>
         <main>
-          <section class='idea-form' id='ideaForm'>
+          <section class="idea-form" id="ideaForm">
             <form>
-              <div class='title-field'>
-                <h3>Title</h3>
-                <input type='text' class='input title-input' id='titleInput'>
+              <div class="title-field">
+                <label for="titleInput">Title</label>
+                <input type="text" class="title-input" id="titleInput">
                 </input>
               </div>
-              <div class='body-field'>
-                <h3>Body</h3>
-                <input type='text' class='input body-input' id='bodyInput'>
+              <div class="body-field">
+                <label for="bodyInput">Body</label>
+                <input type="text" class="body-input" id="bodyInput">
                 </input>
               </div>
-              <button class='saved-button save-dis' id='savedButton'>Save</button>
-              <div class='search-field'>
-                <img src='./assets/search.svg' alt='magnifying glass'>
-                <input type='text' class= 'search-input' value='Search ideas'></input>
-              </div>
+              <button class="saved-button" id="savedButton">Save</button>
             </form>
           </section>
-          <section class='idea-display' id='ideaDisplay'>
+          <section class="idea-display" id="ideaDisplay">
           </section>
         </main>
       </section>
-      <script type='text/javascript' src='Idea.js'></script>
-      <script type='text/javascript' src='main.js'></script>
+      <script type="text/javascript" src="Idea.js"></script>
+      <script type="text/javascript" src="main.js"></script>
     </body>
   </html>
